@@ -1,0 +1,27 @@
+# Fix connections that broke in mountain lion.
+# Ciphers aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour
+
+Host *
+	ServerAliveInterval 60
+
+Host geotrack
+	HostName 89.208.48.81
+	User artem
+
+Host nakover
+	HostName 79.174.64.99
+	User root
+
+Host nakover_deployer
+	HostName 79.174.64.99
+	User deployer
+
+Host heroku.personal
+  HostName heroku.com
+  IdentityFile "/Users/artyomkeydunov/.ssh/identity.heroku.personal"
+  IdentitiesOnly yes
+
+Host heroku.bfl
+  HostName heroku.com
+  IdentityFile "/Users/artyomkeydunov/.ssh/identity.heroku.bfl"
+  IdentitiesOnly yes

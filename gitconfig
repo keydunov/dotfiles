@@ -1,0 +1,18 @@
+[gui]
+	recentrepo = /Users/artyomkeydunov/Documents/gitRep
+[user]
+	name = Artyom
+	email = art.key89@gmail.com
+[core]
+	editor = vim
+[heroku]
+	account = bfl
+[color]
+	ui = true
+[alias]
+	mylog = log --pretty=format:'%h %s [%an]' --graph
+	mylol = log --grap --decorate --pretty=oneline --abbrev-commit
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	st = status
+	br = branch
+	co = checkout
