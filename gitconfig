@@ -1,12 +1,14 @@
 [gui]
 	recentrepo = /Users/artyomkeydunov/Documents/gitRep
 [user]
-	name = Artyom
-	email = art.key89@gmail.com
+	name = Artyom Keydunov
+	email = artyom.keydunov@gmail.com
 [core]
 	editor = vim
+	quotepath = false
+	precomposeunicode = true
 [heroku]
-	account = bfl
+	account = personal
 [color]
 	ui = true
 [alias]
