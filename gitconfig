@@ -18,3 +18,5 @@
 	st = status
 	br = branch
 	co = checkout
+[push]
+	default = matching
