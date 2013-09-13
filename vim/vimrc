@@ -48,7 +48,7 @@ Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
-Bundle 'xenoterracide/html.vim'
+Bundle 'nono/vim-handlebars'
 
 filetype plugin indent on
 
@@ -146,6 +146,8 @@ au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
 au BufRead,BufNewFile *.coffee set filetype=coffee
+au BufRead,BufNewFile *.jade set filetype=jade
+au BufRead,BufNewFile *.hbs set filetype=handlebars
 
 " rspec mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
