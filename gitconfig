@@ -1,22 +1,22 @@
 [gui]
-	recentrepo = /Users/artyomkeydunov/Documents/gitRep
+  recentrepo = /Users/artyomkeydunov/Documents/gitRep
 [user]
-	name = Artyom Keydunov
-	email = artyom.keydunov@gmail.com
+  name = Artyom Keydunov
+  email = artyom.keydunov@gmail.com
 [core]
-	editor = vim
-	quotepath = false
-	precomposeunicode = true
+  editor = vim
+  quotepath = false
+  precomposeunicode = true
 [heroku]
-	account = personal
+  account = personal
 [color]
-	ui = true
+  ui = true
 [alias]
-	mylog = log --pretty=format:'%h %s [%an]' --graph
-	mylol = log --grap --decorate --pretty=oneline --abbrev-commit
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	st = status
-	br = branch
-	co = checkout
+  mylog = log --pretty=format:'%h %s [%an]' --graph
+  mylol = log --grap --decorate --pretty=oneline --abbrev-commit
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  st = status
+  br = branch
+  co = checkout
 [push]
-	default = matching
+  default = matching
