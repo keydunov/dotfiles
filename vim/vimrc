@@ -50,9 +50,8 @@ Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
 Bundle 'xenoterracide/html.vim'
 Bundle 'nono/vim-handlebars'
-Bundle 'xenoterracide/html.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'derekwyatt/vim-scala'
+Bundle 'slim-template/vim-slim'
 
 filetype plugin indent on
 
@@ -152,7 +151,8 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.jade set filetype=jade
 au BufRead,BufNewFile *.hbs set filetype=handlebars
-au BufRead,BufNewFile *.scala set filetype=scala
+au BufRead,BufNewFile *.rabl set filetype=ruby
+au BufRead,BufNewFile *.slim set filetype=slim
 
 " rspec mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
