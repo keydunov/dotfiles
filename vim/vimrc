@@ -17,11 +17,21 @@ set is
 set hls
 set ic
 
+" Auto save
+set autowrite
+set autowriteall
+
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
+
 syntax on
 
 " Declare bundles are handled via Vundle
@@ -52,6 +62,7 @@ Bundle 'xenoterracide/html.vim'
 Bundle 'nono/vim-handlebars'
 Bundle 'kien/ctrlp.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 
@@ -70,10 +81,6 @@ augroup vimrcEx
     \ endif
 augroup END
 
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
@@ -154,10 +161,23 @@ au BufRead,BufNewFile *.hbs set filetype=handlebars
 au BufRead,BufNewFile *.rabl set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 
+" NERDTree
+nmap <Bs> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=2
+let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=0
+let NERDTreeMinimalUI=1 " Disables display of the 'Bookmarks' label and 'Press ? for help' text.
+let NERDTreeDirArrows=1 " Tells the NERD tree to use arrows instead of + ~ chars when displaying directories.
+let NERDTreeBookmarksFile= $HOME . '/.vim/.NERDTreeBookmarks'
+
 " rspec mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
+
+
 
 function! RunCurrentSpecFile()
   if InSpecFile()
