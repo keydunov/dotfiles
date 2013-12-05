@@ -57,6 +57,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-bundler'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
@@ -68,6 +69,8 @@ Bundle 'slim-template/vim-slim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'moll/vim-node'
+Bundle 'elzr/vim-json'
+Bundle 'elixir-lang/vim-elixir'
 
 filetype plugin indent on
 
@@ -158,8 +161,11 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 au BufRead,BufNewFile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.jade set filetype=jade
 au BufRead,BufNewFile *.hbs set filetype=handlebars
+au BufRead,BufNewFile *.handlebars set filetype=handlebars
 au BufRead,BufNewFile *.rabl set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
+au BufRead,BufNewFile *.json set filetype=json
+au BufRead,BufNewFile *.ex set filetype=elixir
 
 " NERDTree
 nmap <Bs> :NERDTreeToggle<CR>

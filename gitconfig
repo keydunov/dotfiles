@@ -15,6 +15,6 @@
   br = branch
   co = checkout
 [push]
-  default = current
+  default = simple
 [github]
-  user = r00k
+  user = keydunov
