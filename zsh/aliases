@@ -1,0 +1,8 @@
+# common
+alias c=clear
+alias l=ls
+alias cl='clear && ls'
+alias cll='clear && ls -lah'
+
+# ruby
+alias killruby='killall -9 ruby'
