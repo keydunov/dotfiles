@@ -38,6 +38,9 @@ syntax on
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" ========================================================================
+" Vundle stuff
+" ========================================================================
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 
@@ -64,6 +67,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'moll/vim-node'
 
 filetype plugin indent on
 
@@ -178,8 +182,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 
-
-
 function! RunCurrentSpecFile()
   if InSpecFile()
     let l:command = "s " . @% . " -f documentation"
@@ -213,3 +215,6 @@ endfunction
 function! RunSpecs(command)
   execute ":w\|!clear && echo " . a:command . " && echo && " . a:command
 endfunction
+
+" Vim node setup
+set runtimepath^=~/.vim/bundle/vim-node
