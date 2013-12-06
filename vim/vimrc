@@ -33,6 +33,7 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 syntax on
+filetype plugin indent on
 
 " Declare bundles are handled via Vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -72,7 +73,6 @@ Bundle 'moll/vim-node'
 Bundle 'elzr/vim-json'
 Bundle 'elixir-lang/vim-elixir'
 
-filetype plugin indent on
 
 augroup vimrcEx
   au!
