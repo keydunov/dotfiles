@@ -72,6 +72,8 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'moll/vim-node'
 Bundle 'elzr/vim-json'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 
 augroup vimrcEx
