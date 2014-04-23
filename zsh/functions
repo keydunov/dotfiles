@@ -4,7 +4,6 @@ function take {
 }
 
 # git
-
 function git_branch_name {
   val=`git branch 2>/dev/null | grep '^*' | colrm 1 2`
   echo "$val"
@@ -15,4 +14,12 @@ function git-on-master {
   git checkout master && git pull --rebase
   git checkout $branch
   git rebase master
+}
+
+# httpie
+
+# a shortcut for invoking HTTPie with colorized and paged output
+function httpless {
+    # `httpless example.org'
+    http --pretty=all --print=hb "$@" | less -R;
 }
