@@ -6,3 +6,5 @@ alias cll='clear && ls -lah'
 
 # ruby
 alias killruby='killall -9 ruby'
+
+alias checkports='lsof -i -n -P | grep TCP'

@@ -12,6 +12,8 @@ set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
 set textwidth=80
 
+filetype off
+
 " Search options
 set is
 set hls
@@ -32,8 +34,6 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
-syntax on
-filetype plugin indent on
 
 " Declare bundles are handled via Vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -74,8 +74,10 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'wting/rust.vim'
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'cespare/vim-toml'
+Bundle 'rking/ag.vim'
 
+filetype plugin indent on
 
 augroup vimrcEx
   au!
@@ -162,6 +164,7 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " filtypes
 au bufread,bufnewfile *.rs set filetype=rust
+au bufread,bufnewfile *.toml set filetype=toml
 au bufread,bufnewfile *.coffee set filetype=coffee
 au BufRead,BufNewFile *.jade set filetype=jade
 au BufRead,BufNewFile *.hbs set filetype=handlebars
@@ -170,7 +173,7 @@ au BufRead,BufNewFile *.rabl set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 au BufRead,BufNewFile *.json set filetype=json
 au BufRead,BufNewFile *.ex set filetype=elixir
-au BufRead,BufNewFile *.go set filetype=go
+au BufRead,BufNewFile *.exs set filetype=elixir
 
 " NERDTree
 nmap <Bs> :NERDTreeToggle<CR>
