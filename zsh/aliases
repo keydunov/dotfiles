@@ -8,3 +8,4 @@ alias cll='clear && ls -lah'
 alias killruby='killall -9 ruby'
 
 alias checkports='lsof -i -n -P | grep TCP'
+alias dir_size='du -h -d *'
