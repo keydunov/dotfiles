@@ -10,6 +10,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Define Plugins via Github repos
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'croaky/vim-colors-github'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
@@ -33,6 +34,7 @@ Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'rking/ag.vim'
 Plugin 'kylef/apiblueprint.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype on
