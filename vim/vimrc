@@ -143,3 +143,6 @@ map <Leader>w <C-w>w
 if filereadable(expand("~/.vim/functions.vim"))
   source ~/.vim/functions.vim
 endif
+
+" ctrlp config
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*

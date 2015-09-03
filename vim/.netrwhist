@@ -1,10 +1,10 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/artyomkeydunov/uchiru/content/src'
+let g:netrw_dirhist_1='/Users/artyomkeydunov/uchiru/cms/bin/custom'
 let g:netrw_dirhist_2='/Users/artyomkeydunov/uchiru/happy-numbers'
-let g:netrw_dirhist_3='/Users/artyomkeydunov/open_source/rpm'
-let g:netrw_dirhist_4='/Users/artyomkeydunov/.oh-my-zsh'
-let g:netrw_dirhist_5='/Users/artyomkeydunov/learn_rust'
-let g:netrw_dirhist_6='/Users/artyomkeydunov'
-let g:netrw_dirhist_7='/Users/artyomkeydunov/dotfiles/vim/colors'
-let g:netrw_dirhist_8='/Users/artyomkeydunov/fixapp'
+let g:netrw_dirhist_3='/Users/artyomkeydunov/fixapp/clubs'
+let g:netrw_dirhist_4='/Users/artyomkeydunov/uchiru/cms/app/models/platform'
+let g:netrw_dirhist_5='/Users/artyomkeydunov/uchiru/happy-numbers'
+let g:netrw_dirhist_6='/Users/artyomkeydunov/sideprojects/smartshelf/smartshelf-backend/config/deploy'
+let g:netrw_dirhist_7='/Users/artyomkeydunov/uchiru/cms'
+let g:netrw_dirhist_8='/Users/artyomkeydunov/vagrant/.vagrant'

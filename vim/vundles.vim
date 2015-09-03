@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'croaky/vim-colors-github'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'tpope/vim-bundler'
@@ -35,6 +36,7 @@ Plugin 'cespare/vim-toml'
 Plugin 'rking/ag.vim'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'fatih/vim-go'
+Plugin 'slim-template/vim-slim'
 
 call vundle#end()
 filetype on
