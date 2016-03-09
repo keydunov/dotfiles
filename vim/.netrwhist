@@ -1,10 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/artyomkeydunov/uchiru/cms/bin/custom'
-let g:netrw_dirhist_2='/Users/artyomkeydunov/uchiru/happy-numbers'
-let g:netrw_dirhist_3='/Users/artyomkeydunov/fixapp/clubs'
-let g:netrw_dirhist_4='/Users/artyomkeydunov/uchiru/cms/app/models/platform'
-let g:netrw_dirhist_5='/Users/artyomkeydunov/uchiru/happy-numbers'
-let g:netrw_dirhist_6='/Users/artyomkeydunov/sideprojects/smartshelf/smartshelf-backend/config/deploy'
-let g:netrw_dirhist_7='/Users/artyomkeydunov/uchiru/cms'
-let g:netrw_dirhist_8='/Users/artyomkeydunov/vagrant/.vagrant'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/artyomkeydunov/ansible'
